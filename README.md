@@ -18,7 +18,10 @@ https://book.getfoundry.sh/
 ### Build
 
 ```shell
+source .env
+forge script script/DeployMyToken.s.sol --rpc-url https://sepolia.infura.io/v3/${INFURA_PROJECT_ID} --private-key YOUR_PRIVATE_KEY
 $ forge build
+
 ```
 
 ### Test
